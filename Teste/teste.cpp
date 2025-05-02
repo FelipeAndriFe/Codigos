@@ -11,10 +11,10 @@ int main ()
     std::cin >> h;
     A = b * h;
     
-    if (b || h <= 0)
+    if (b <= 0 || h <= 0)
     {
         printf("Rectangle doesn't exist. Try again");
     } else {
-        printf("Your area is:", "%d" , A);
+        printf("%d" , A);
     }
 }
