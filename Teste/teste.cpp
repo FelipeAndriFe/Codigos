@@ -10,5 +10,11 @@ int main ()
     std::cout << "Input height";
     std::cin >> h;
     A = b * h;
-    printf("%d" , A);
+    
+    if (b || h <= 0)
+    {
+        printf("Rectangle doesn't exist. Try again");
+    } else {
+        printf("Your area is:", "%d" , A);
+    }
 }
